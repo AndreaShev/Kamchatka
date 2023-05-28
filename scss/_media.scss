@@ -1,0 +1,980 @@
+@import '_vars';
+@import '_fonts';
+// 1199px
+@media (max-width: 1199px) {
+    // === GLOBAL ===
+    .journey-time span {
+        font-size: $base*6.75;
+        line-height: $base*12.5;
+    }
+    // === HEADER ===
+    .header-info {
+        &__title {
+            font-size: $base*12;
+            line-height: $base*15;
+        }
+        &__journey-time {
+            margin-bottom: $base*6.75;
+        }
+    }
+    // === SEVENTH ===
+    .seventh {
+        &-content {
+            &__title {
+                max-width: 100%;
+            }
+            &__text {
+                max-width: 100%;
+            }
+        }
+        &-photo {
+            display: none;
+        }
+    }
+    // === FOOTER ===
+    .footer {
+        &-content__item {
+            padding: 0px $base*2.5;
+            &:first-child {
+                padding: 0px $base*2.5 0px 0px;
+            }
+            &:last-child {
+                padding: 0px 0px 0px $base*2.5;
+            }
+        }
+        &-recall {
+            max-width: $base*71;
+        }
+    }
+}
+
+// 991px
+@media (max-width: 991px) {
+    // === GLOBAL ===
+     ::-webkit-scrollbar {
+        width: 0px;
+    }
+     :root {
+        scrollbar-width: 0px;
+    }
+    .journey-time span {
+        font-size: $base*5.75;
+        line-height: $base*10;
+    }
+    .section-container {
+        max-width: $base*321.5;
+        padding: 0px $base*5;
+    }
+    .title-block {
+        &::before,
+        &::after {
+            display: none;
+        }
+        &__text {
+            margin-bottom: $base*9;
+        }
+    }
+    .slider_right-content {
+        &.slider-container {
+            width: 94vw;
+        }
+        .slider {
+            &-wrapper {
+                padding-bottom: 0px;
+            }
+            &-item_active {
+                max-width: $base*70.75;
+                width: 100%;
+                height: $base*70.5;
+            }
+        }
+    }
+    // === HEADER ===
+    .header {
+        height: $base*180;
+        &-info__title {
+            font-size: $base*10;
+            line-height: $base*11.75;
+        }
+        &-top__button {
+            margin-left: $base*3.75;
+        }
+        &-slider {
+            width: 41%;
+        }
+    }
+    // === MENU ===
+    .menu-list__item+.menu-list__item {
+        margin-left: 0px;
+    }
+    // === JOURNEY ===
+    .journey {
+        &-wrapper {
+            background: none;
+        }
+        &-inner {
+            height: $base*250;
+        }
+        &-content {
+            bottom: $base*7.5;
+        }
+        &-title {
+            display: none;
+        }
+        &-items {
+            justify-content: space-between;
+        }
+        &-item {
+            &+& {
+                margin-left: $base*2.5;
+            }
+        }
+    }
+    // === FIRST DAY ===
+    .first {
+        height: $base*221.25;
+        padding-top: $base*10;
+        &-day-content {
+            max-width: 100%;
+        }
+    }
+    // === DAY ===
+    .day {
+        &-wrapper {
+            flex-direction: column;
+        }
+        &-content {
+            margin-bottom: $base*11.75;
+        }
+        &-slider,
+        &-content {
+            width: 100%;
+        }
+    }
+    // === SECOND DAY ===
+    .second {
+        background-image: none;
+        &::before {
+            height: 20%;
+            top: -7%;
+        }
+        &-content {
+            flex-direction: column;
+            &__slider {
+                margin-left: 2%;
+                width: 100%;
+                .slider-button {
+                    justify-content: flex-start;
+                }
+            }
+            &__info {
+                order: -1;
+                margin-bottom: $base*10;
+            }
+        }
+    }
+    // === FIFTH SIXTH ===
+    .fifth-sixth__wrapper {
+        padding: $base*10 0px $base*22.5;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::before,
+        &::after {
+            background-size: initial;
+        }
+    }
+    // === THIRD DAY and FIFTH ===
+    .third {
+        .slider-button {
+            display: none;
+        }
+    }
+    .third,
+    .fifth {
+        padding-top: $base*10;
+        padding-bottom: $base*10;
+        height: 100%;
+        .day-content {
+            order: -1;
+        }
+        .day-slider {
+            &_left {
+                margin-left: 0px;
+            }
+            .slider {
+                &_left-content {
+                    &.slider-container {
+                        width: 100%;
+                        padding-left: 0px;
+                    }
+                }
+                &-item_active {
+                    max-width: $base*70.75;
+                    height: $base*70.5;
+                }
+            }
+        }
+    }
+    // === FOURTH DAY ===
+    .fourth {
+        &::before,
+        &::after {
+            display: none;
+        }
+        padding: $base*10 0px;
+        .slider_right-content .slider-wrapper {
+            padding-bottom: $base*20;
+        }
+    }
+    // === FIFTH ===
+    .fifth {
+        .day-content {
+            order: -1;
+        }
+    }
+    // === SIXTH ===
+    .sixth {
+        .slider-wrapper {
+            padding-bottom: $base*15;
+        }
+    }
+    // === SEVENTH ===
+    .seventh {
+        &-slider {
+            margin-left: 0%;
+            width: 100%;
+            .slider_left-content.slider-container {
+                padding-left: 0%;
+                width: 100%;
+            }
+        }
+        &-info {
+            order: -1;
+            max-width: 100%;
+        }
+        &-information {
+            flex-direction: column;
+        }
+    }
+    // === EIGHTH ===
+    .eighth {
+        height: $base*125;
+        &-day-content {
+            padding: 0px $base*2.5;
+        }
+    }
+    // === PRICE ===
+    .price {
+        padding-top: $base*12.5;
+        .extra {
+            margin-top: $base*2.5;
+            &-item {
+                &__title {
+                    margin-left: 0px;
+                }
+                &__text {
+                    margin-right: 0px;
+                }
+            }
+        }
+        .price-action {
+            margin-top: $base*3.75;
+        }
+        &-top {
+            flex-direction: column;
+            align-items: center;
+            &__title {
+                font-size: $base*12.5;
+            }
+            &__link-items {
+                margin-right: 0px;
+            }
+        }
+        &-items {
+            justify-content: space-between;
+            padding-bottom: $base*15;
+        }
+        &-item {
+            &+& {
+                margin-left: 0px;
+            }
+        }
+    }
+    // === REQUEST ===
+    .request {
+        padding: $base*10 0px;
+        &-order {
+            flex-direction: column;
+            width: 100%;
+        }
+        &-info {
+            margin-bottom: $base*10;
+        }
+        &-knowledge {
+            height: $base*100;
+            &__info {
+                margin-left: 0px;
+            }
+            &__img {
+                display: none;
+            }
+        }
+        &-form-inner {
+            width: 100%;
+        }
+    }
+    // === ABOUT ===
+    .about {
+        padding: $base*15 0px $base*15;
+    }
+    // === FOOTER ===
+    .footer-content {
+        flex-wrap: wrap;
+    }
+}
+
+// 770px
+@media (max-width: 770px) {
+    // === GLOBAL ===
+    .burger {
+        display: block;
+    }
+    .action-btn {
+        display: flex;
+        margin-bottom: 5%;
+    }
+    .slider-button {
+        display: none;
+    }
+    .title-block__text {
+        font-size: $base*5.75;
+        line-height: $base*8.75;
+        margin-bottom: $base*5;
+    }
+    // === HEADER ===
+    .header {
+        .section-container {
+            position: relative;
+        }
+        &-top__button {
+            margin-right: $base*7.25;
+        }
+        &-info {
+            position: static;
+            height: auto;
+            &__text {
+                display: none;
+            }
+        }
+        &-social {
+            right: 20%;
+            bottom: -1%;
+            left: auto;
+        }
+        &-content {
+            flex-direction: column;
+        }
+        &-slider {
+            width: 100%;
+            .slider {
+                &-container {
+                    width: 100vw;
+                }
+                &-item_active {
+                    max-width: $base*52.75;
+                    height: $base*52.25;
+                }
+            }
+        }
+    }
+    // === MENU ===
+    .menu-list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 10;
+        padding: $base*20 0px $base*7.5;
+        flex-direction: column;
+        text-align: center;
+        background-color: $color-primary-200;
+        transition: all $transition ease-in-out;
+        &__item {
+            padding: $base*7.5 0px;
+            font-size: $base*7.5;
+        }
+    }
+    // === JOURNEY ===
+    .journey {
+        padding-top: $base*17.5;
+        &-inner {
+            height: $base*228.75;
+        }
+        &-top {
+            margin-bottom: $base*3.75;
+            &__title {
+                font-size: $fs-l;
+                line-height: $base*10;
+            }
+        }
+        &-text__title {
+            font-size: $base*5;
+            line-height: $base*6.25;
+            margin-bottom: $base*3.75;
+        }
+        &-info {
+            margin-bottom: $base*8.75;
+        }
+    }
+    // === DAY ===
+    .day-content__text {
+        &+& {
+            margin-top: $base*2.5;
+        }
+    }
+    // === CARDS ===
+    .cards {
+        padding-top: $base*7.5;
+    }
+    // === FOURTH DAY ===
+    .fourth {
+        .slider_right-content .slider-wrapper {
+            padding-bottom: 0px;
+        }
+    }
+    // === SIXTH ===
+    .sixth .slider-wrapper {
+        padding-bottom: 0px;
+    }
+    // === EIGHTH ===
+    .eighth {
+        &-day-content {
+            bottom: 16%;
+            right: 0;
+        }
+        .title-block__text {
+            font-size: $base*10;
+            line-height: $base*12.5;
+        }
+        .day-content__text {
+            font-size: $base*4.5;
+            line-height: $base*7.5;
+        }
+    }
+    // === PRICE ===
+    .price {
+        &-top {
+            display: block;
+            margin-bottom: $base*7.5;
+        }
+        &-items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-item {
+            &+& {
+                margin-top: $base*10;
+            }
+        }
+    }
+    // === REQUEST ===
+    .request {
+        &-knowledge {
+            height: $base*57.5;
+            &__title {
+                font-size: $base*6.25;
+                line-height: $base*7.5;
+            }
+            &__text {
+                font-size: $fs-xs;
+                line-height: $base*5;
+                margin-bottom: $base*3.75;
+            }
+        }
+        &-content {
+            width: 100%;
+        }
+    }
+    // === ABOUT ===
+    .about {
+        &-top__title {
+            font-size: $fs-l;
+            line-height: $base*12.5;
+            margin-bottom: $base*10;
+        }
+        &-button {
+            display: none;
+        }
+        &-slider {
+            padding-bottom: 0px;
+        }
+    }
+    // === FOOTER ===
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        &__item {
+            margin-bottom: $base*3.75;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+// 576px
+@media (max-width: 576px) {
+    // === GLOBAL ===
+    .action-btn__icon {
+        width: $base*12.5;
+        height: $base*12.5;
+    }
+    .title-block__text {
+        font-size: $base*6.25;
+        line-height: $base*7.5;
+    }
+    .radio-btn__text {
+        font-size: $fs-xs;
+    }
+    .extra {
+        margin-top: $base*3.75;
+        &-title {
+            margin-bottom: $base*3.75;
+        }
+        &-item {
+            &__text {
+                max-width: $base*54;
+                font-size: $fs-x-small;
+                margin-right: 0px;
+            }
+            &__title {
+                font-size: $base*3.75;
+                margin-left: 0px;
+            }
+        }
+    }
+    // === HEADER ===
+    .header {
+        &-social {
+            bottom: -4%;
+        }
+        &-info {
+            margin-top: 17%;
+            &__journey-time {
+                font-size: $base*7.5;
+                line-height: $base*14;
+                margin-bottom: $base*8;
+            }
+            &__title {
+                font-size: $base*11.25;
+                line-height: $base*15;
+            }
+        }
+    }
+    // === JOURNEY ===
+    .journey {
+        background-image: url(../images/default/journey-bg-mobile.png);
+        &-inner {
+            height: $base*237.5;
+        }
+        &-top__title {
+            font-size: $base*8;
+            line-height: $base*8.75;
+        }
+        &-content__title {
+            font-size: $base*5;
+            line-height: $base*6.5;
+            margin-bottom: $base*3.75;
+        }
+        &-text {
+            &__title {
+                font-size: $fs-xs;
+                line-height: $base*5;
+                margin-bottom: $base*2.5;
+            }
+            &__word {
+                font-size: $base*3.75;
+            }
+        }
+        &-items {
+            flex-wrap: wrap;
+        }
+        &-item {
+            max-width: $base*37.5;
+            margin-left: 0;
+            flex-basis: 50%;
+            margin-bottom: $base*10;
+        }
+    }
+    // === DAY ===
+    .day-content__text {
+        font-size: $base*3.75;
+    }
+    // === SECOND DAY ===
+    .second {
+        padding-top: $base*8.75;
+        &-top {
+            margin-bottom: $base*3.75;
+        }
+    }
+    // === THIRD AND FIFTH ===
+    .third,
+    .fifth {
+        padding-bottom: 0px;
+        height: 100%;
+    }
+    .fifth {
+        padding-top: 0px;
+    }
+    // === SIXTH ===
+    .sixth {
+        padding-top: 0px;
+    }
+    // === SEVENTH ===
+    .seventh {
+        padding: $base*13.75 0px $base*13.75 0px;
+        &-content__text {
+            &+& {
+                margin-top: $base*2.5;
+            }
+        }
+        &-slider {
+            .slider-wrapper {
+                padding-bottom: 0px;
+                margin-top: $base*6.25;
+            }
+        }
+        &-information {
+            margin-top: $base*2.5;
+        }
+    }
+    // === EIGHTH ===
+    .eighth {
+        height: $base*100;
+        &-day-content {
+            bottom: 0%;
+        }
+        .title-block__text {
+            font-size: $base*7.5;
+            line-height: $base*10;
+        }
+    }
+    // === PRICE ===
+    .price {
+        &-top {
+            &__title {
+                font-size: $base*6.25;
+                line-height: 15px;
+            }
+            .extra-item {
+                padding: $base*5 0px;
+                &__title {
+                    font-size: $fs-xs;
+                }
+                &__text {
+                    font-size: $base*4.25;
+                }
+            }
+            &__link-items {
+                margin-top: $base*5;
+            }
+            &__title {
+                font-size: $base*7.5;
+            }
+        }
+    }
+    // === REQUEST ===
+    .request {
+        background: none;
+        &-info__title {
+            font-size: $base*7.5;
+            line-height: $base*7.5;
+            margin-bottom: $base*3.75;
+        }
+        .request-social__item+.request-social__item {
+            margin-left: $base*2.5;
+        }
+        &-form-top {
+            justify-content: space-between;
+        }
+        &-tariff {
+            margin: $base*6.25 0px $base*6.25 0px;
+        }
+        .radio-btn {
+            &__text {
+                max-width: $base*50;
+            }
+            &__price {
+                font-size: $base*4.25;
+            }
+        }
+        &-content__title {
+            margin-bottom: 0px;
+        }
+        &-knowledge {
+            &__info {
+                color: $color-primary-300;
+            }
+            &__form {
+                display: block;
+            }
+            &__input {
+                border-bottom-color: $color-primary-300;
+            }
+            &__btn {
+                margin-left: 0px;
+                margin-top: $base*5;
+            }
+            &__title {
+                font-size: $base*5;
+                line-height: $base*5;
+            }
+        }
+    }
+    // === ABOUT ===
+    .about-top {
+        margin-bottom: $base*12.5;
+        &__title {
+            font-size: $base*7.5;
+            line-height: $base*8.75;
+            margin-bottom: $base*6.25;
+        }
+    }
+}
+
+// 450px
+@media (max-width: 450px) {
+    // === GLOBAL ===
+    .logo__image {
+        max-width: $base*37.5;
+    }
+    .journey-time span {
+        font-size: $fs-xs;
+        line-height: $base*7.5;
+    }
+    .title-block__text {
+        font-size: $base*5;
+        line-height: $base*6.75;
+        margin-bottom: $base*2.5;
+    }
+    // === HEADER ===
+    .header {
+        height: $base*155;
+        &-top__button {
+            margin-right: $base*5;
+            margin-left: $base*1.25;
+        }
+        &-info {
+            margin-top: 10%;
+            &__journey-time {
+                font-size: $base*5;
+                line-height: $base*2.5;
+                margin-bottom: $base*5;
+            }
+            &__title {
+                font-size: $base*7.5;
+                line-height: $base*10;
+                margin-bottom: $base*3.75;
+            }
+        }
+    }
+    // === JOURNEY ===
+    .journey {
+        &-top__title {
+            font-size: $base*6.25;
+            line-height: $base*6.25;
+        }
+        &-text__word {
+            font-size: $fs-x-small;
+        }
+        &-content {
+            &__title {
+                font-size: $fs-xs;
+                line-height: $base*5;
+            }
+            &__text {
+                font-size: $fs-x-small;
+            }
+        }
+    }
+    // === DAY ===
+    .day-content__text {
+        font-size: $fs-x-small;
+    }
+    // === FIRST DAY ===
+    .first {
+        height: $base*220;
+    }
+    // === SECOND DAY ===
+    .second {
+        &-wrapper {
+            font-size: $base*3.75;
+        }
+        &-top__text {
+            &+& {
+                margin-top: $base*3.75;
+            }
+        }
+        &-content__text {
+            &+& {
+                margin-top: $base*3.75;
+            }
+        }
+    }
+    // === REQUEST ===
+    .request {
+        input {
+            font-size: $fs-xs;
+        }
+        &-info {
+            margin-bottom: $base*2.5;
+        }
+        .radio-btn__price {
+            font-size: $base*3.75;
+        }
+        &-form__count {
+            font-size: $base*3.75;
+            margin-left: $base*5;
+        }
+        &-knowledge {
+            &__info {
+                color: $color-primary-300;
+            }
+            &__form {
+                display: block;
+            }
+            &__btn {
+                margin-left: 0px;
+                margin-top: $base*5;
+            }
+        }
+        &-social__item-link svg {
+            width: $base*6.25;
+            height: $base*6.25;
+        }
+    }
+    // === ABOUT ===
+    .about {
+        &-top {
+            &__title {
+                font-size: $base*5.25;
+                line-height: $base*6.25;
+                margin-bottom: $base*2.25;
+            }
+            &__text {
+                font-size: $base*3.5;
+            }
+        }
+        &-item {
+            &__info {
+                font-size: $base*3.75;
+                margin-top: $base*2.25;
+            }
+            &__img img {
+                width: $base*75;
+                height: $base*102.5;
+            }
+        }
+    }
+    // === FOOTER ===
+    .footer-instagram__item {
+        margin-bottom: $base*2.25;
+        img {
+            width: $base*22.5;
+            height: $base*22.5;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    // === GLOBAL ===
+    .section-container {
+        padding: 0px $base*3.75;
+    }
+    .btn {
+        padding: $base*2 $base*2.25;
+        // max-width: $base*32.5;
+    }
+    // === HEADER ===
+    .header {
+        &-top__button {
+            margin-right: $base*2.5;
+        }
+        &-info {
+            margin-top: $base*2.5;
+            &__title {
+                font-size: $base*6.75;
+                line-height: $base*8.75;
+            }
+        }
+    }
+    // === MENU ===
+    .menu-list {
+        padding: $base*15 0px $base*5;
+        &__item {
+            padding: $base*3.75 0px;
+            font-size: $base*5;
+        }
+    }
+    // === JOURNEY ===
+    .journey {
+        &-top__title {
+            font-size: $base*5;
+        }
+        &-text__title {
+            font-size: $base*3.75;
+            line-height: $base*4.5;
+        }
+        &-item {
+            &+& {
+                margin-left: 0px;
+            }
+            &__title {
+                font-size: $fs-x-small;
+            }
+        }
+    }
+    // === FIRST DAY ===
+    .first {
+        height: $base*240;
+    }
+    // === EIGHTH ===
+    .eighth {
+        height: $base*75;
+        .title-block__text {
+            font-size: $base*5;
+            line-height: $base*7.5;
+        }
+        .day-content__text {
+            font-size: $base*3.75;
+            line-height: $base*5;
+        }
+    }
+    // === PRICE ===
+    .price-top__title {
+        font-size: $base*6.25;
+        line-height: $base*3.75;
+    }
+    // === REQUEST ===
+    .request {
+        &-info__title {
+            font-size: $base*6.25;
+            line-height: $base*5;
+            margin-bottom: $base*3.75;
+        }
+        &-knowledge {
+            &__title {
+                font-size: $fs-xs;
+                line-height: $base*4.5;
+            }
+            &__text {
+                font-size: $fs-x-small;
+                line-height: $base*4;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
